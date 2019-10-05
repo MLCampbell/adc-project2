@@ -1,0 +1,495 @@
+
+/* Base styles:
+   ========================================================================== */
+/* Red outline all selector
+ 
+ *{
+outline: dotted red 1px;
+
+}
+ 
+ - uncomment to visualise element box layouts 
+==========================================*/
+    
+/* Declare page default font color, line height and size*/
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  height:100%;
+  margin:0;
+  padding-bottom:0;
+  
+}
+/* Allows for broswer to account for padding and margins when setting containers*/
+*{box-sizing: border-box
+
+}
+/*Declare default font and body style*/
+body {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	padding:0;  
+}
+/* Ensure div defaults are overriden */
+.allpageconent{
+	padding:0;
+	margin:0;
+}
+/*index.html page height*/
+#index.allpagecontent{
+	position: relative;
+	height:2000px;
+	
+}
+/* allchampion.html page height */
+#championpage.allpagecontent{
+	position: relative;
+	height:2450px;
+	
+}
+/* resources.html page height */
+#resources.allpagecontent{
+	position: relative;
+	height:1900px;
+
+}
+/* contact.html page height */
+#contact.allpagecontent{
+	
+	position: relative;
+	height:1200px;	
+}
+/*thankyou.html page height*/
+#thankyou.allpagecontent{
+	position: relative;
+	height:767px;	
+}
+/* topnav bar colour and position */
+.topnav {
+  background-color: #262424;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  height: 75px;
+  z-index: 1
+  
+}
+/* organise nav list*/
+.topnav ul{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	
+}
+/* Style the list elements*/
+.topnav li{
+	list-style-type: none;
+	float: right;
+	
+}
+/* Style the links inside the list navigation */
+.topnav li a {
+  color: #EA122F;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 0px;
+  display: inline;
+  
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+/* Add a color to the active link */
+.topnav a.active {
+  background-color: #4B88A2;
+  color: white;
+  
+}
+/*Marksman page icon*/
+.topnav img{
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	display: inline-block;
+	height: 55px;
+	border-radius: 15px;
+	padding: 0;
+
+}
+/*Page title container position*/
+.title{
+	display: inline-block;
+	width: 300px;
+	
+}
+/*Page title style*/
+.title h1{
+	margin: 18px 0px 0px 5em;
+	margin: 18px 0px 0px 5em;
+	color: #EA122F;
+	font-size: 15px;
+	text-shadow: 1px 1px 1px #424251;
+	word-wrap: break-word;
+	white-space: normal;
+	text-align: center;
+	
+}
+/*Hero landing container position*/
+.herolanding{
+	margin-top: 0;
+    position: relative;
+    overflow: hidden;
+	height: 400px;
+	top: 53px;
+	text-align: center;
+	
+}
+/*Hero landing image style*/
+.herolanding img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    opacity: 0.4;
+	z-index: -1;
+	
+}
+/*Landing text default style*/
+.herotext {
+	display: inline-block;
+	margin-top: 5%;
+	color: #D3D4D9;
+	text-align: center;
+	height: 265px;
+	width: 700px;
+	background-color: #262424;
+	border-radius: 30px;
+	
+}
+/*Main landing heading style*/
+.herotext h1{
+	color: #EA122F;
+	font-size: 45px;
+	text-shadow: 1px 1px 10px #424251;
+	
+}
+/*Defaut styling for main quote*/
+.main{
+	margin-top: 90px;
+	text-align: center;
+	
+}
+.main q{
+	display: block;
+	color: #4B88A2;
+}
+/*Styling for champion grids
+============================
+=
+=
+*/
+.championquote{
+	margin-top: 90px;
+	text-align: center;
+}
+.championquote q{
+	display: block;
+	color: #4B88A2;
+}
+ #ctamarker{
+	display: inline-block;
+	width: auto;
+	background-color: #4B88A2;
+	padding: 5px 15px 5px 15px;
+	margin-top: 35px;
+	border-width:5px #262424;  
+    border-style:double;
+	
+}
+#ctamarker a{
+	font-size: 35px;
+	color: #D3D4D9;
+	margin: 0;
+	text-shadow: 2px 1px 10px #262424;
+}
+/*Grid wrapper for champion containers*/
+.championgrid {
+	display:grid;
+	grid-template-columns: repeat(3, 20%);
+	grid-auto-rows: auto;
+	column-gap: 5%;
+	row-gap: 5%;
+	width: 100%;
+	margin-top: 5%;
+	margin-left:15%;
+	
+}
+/*Champion container*/
+.championcontainer {
+  display:grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  text-align: center;
+  border: 1px #262424 solid;
+  border-radius: 10px;
+  background: #D3D4D9;
+  
+}
+.championcontainer:hover{
+		border-radius: 20px;
+		border: 1px #EA122F dotted;
+		row-gap: 8px;
+		
+	
+}
+
+/*  */
+.championname {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 15px;
+  padding-top: 5px;
+  
+}
+/*  */
+.championname h1, h2{
+	margin: 0;
+	padding: 0;
+}
+/*  */
+.championdetails { 
+  grid-column: 1;
+  grid-row: 2;
+ 
+}
+/*  */
+.championdetails p{
+	margin: 0;
+	display: inline-block;
+}
+/*  */
+#positivewinrate{
+	color: #33ff00;
+	background: black;
+	margin:0px 0px 5px 5px;
+	width: 65px;
+	border-radius: 20px;
+	font-weight: bold;
+	
+}
+/*  */
+#negativewinrate{
+	color: red;
+	background: black;
+	margin:0px 0px 5px 5px;
+	width: 65px;
+	border-radius: 20px;
+	font-weight: bold;
+}
+/*  */
+#pickrate{
+	color: white;
+	background: black;
+	margin:0px 0px 5px 5px;
+	width: 60px;
+	border-radius: 20px;
+	font-weight: bold;
+}
+/*  */
+.championimg {
+  grid-column: 1;
+  grid-row: 3;
+  padding-bottom: 15px;
+}
+/*  */
+.championimg img{
+	border-radius:50px;
+	max-width:150px;
+    height:auto;
+	
+}
+/* Resource table styling */
+.resourcetable {
+	position: absolute;
+	text-align: center;
+	color: #262424;
+	border-spacing: 100px 100px;
+	width: 60%;
+	margin-left:20%;
+	margin-right:20%;
+	
+	
+	
+}
+
+.privacytable {
+	position: absolute;
+	color: #262424;
+	border-spacing: 100px 100px;
+	width: 60%;
+	margin-left:20%;
+	margin-right:20%;
+}
+
+.privacytable h1{
+	color: #EA122F;
+	font-size: 45px;
+	text-align: center;
+}
+.resourcerow span{
+	font-size: 25px;
+}
+
+.resourcerow h1{
+	color: #EA122F;
+	font-size: 45px;
+	text-align: top;
+
+}
+
+.resourcerow a{
+	text-decoration:;
+	color: inherit;
+	font-size: 30px;
+	color: white;
+	background-color: #262424;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.resourcerow a:hover {
+  background-color: #EA122F;
+  color: black;
+	
+}
+.resourcerow td,.privacytable td{
+	border: 3px solid #262424;
+	background-color: #D3D4D9;
+	width: 500px;
+	height: auto;
+	padding: 20px;
+	border-radius: 10%;
+	
+}
+/* footer style and position */
+.footer{
+	position:absolute;
+   width:100%;
+   height:85px;
+	background-color: #262424;
+	bottom: 0;
+
+}
+/*Style the footer*/
+.footer span{
+	float: right;
+	color: #EA122F;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 17px;
+	margin-top: 12px;
+	display: inline;
+	
+}
+
+/*  */
+
+.footer a{
+	bottom: 0;
+	color: #EA122F;
+	text-align: center;
+	text-decoration: none;
+	
+}
+a#privacy {
+	float: right;
+	padding: 14px 16px;
+	font-size: 17px;
+	margin-top: 12px;
+}
+
+a#returnpagetop
+{
+	position: relative;
+	left: 27%;
+	padding: 14px 16px;
+	font-size: 17px;
+	margin-top: 12px;	
+}
+/*Marksman page icon*/
+.footer img{
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	display: inline-block;
+	height: 55px;
+	border-radius: 15px;
+}
+/*Contact form styling
+===================
+=
+=
+=
+*/
+/* Style input areas */
+.input[type=text], select, textarea {
+  width: 100%; 
+  padding: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  margin-top: 15px; 
+  margin-bottom: 20px; 
+  resize: vertical
+}
+/*  */
+#email{
+	width: 500px;
+}
+/* Submit button styling */
+input[type=submit] {
+	position: absolute;
+	bottom: -50px;
+	left: 45%;
+  background-color: #EA122F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker grey color */
+input[type=submit]:hover {
+  background-color: #262424;
+}
+/* Add a background color and some padding around the form */
+.contactcontainer {
+	position: relative;
+	border-radius: 10px;
+	background-color: #D3D4D9;
+	margin: 40px;
+	padding: 30px;
+}
+/*Removes the gaps between images and iframes and the bottom of their containers */
+iframe, img,
+{
+  vertical-align: middle;
+}
+/* A better looking default horizontal rule */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}

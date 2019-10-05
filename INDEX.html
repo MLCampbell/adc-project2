@@ -1,0 +1,209 @@
+<!-------------------------------------------------
+Notes on design: The League of Legends Marksman Hub
+
+I opted for grid layout for the most part. Found it to be a more consistent and maleable
+ layout compared to using floats or tables, although there were some exceptions.
+ 
+Table was used in resources.html
+
+Cited all images in index.html and jinx.html. The remaining pages share the same sources for media.
+
+Marcus Campbell (91050015)
+--------------------------->
+
+
+<!doctype html>
+<html lang="en">
+
+<!----------------------------------------
+Page head meta tags
+-->
+<head>
+	<meta charset="utf-8">
+	<title>The League of Legends Marksman Hub</title>
+	<meta name="description" content="A hub for all league of legends marksman and adc information. Builds, statistics, attributes and win rates">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-----------------------------------------
+Links to main stylesheet and normalize.css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<!---------------------------------------- 
+Page content -->
+<body>
+<a name="pagetop"></a>
+<div class="allpagecontent" id="index">
+<!----------------------------------------
+Header -->
+	<header>
+		<div class="topnav">
+			<img cite="leagueoflegends.com" alt="league of legends marksman icon" src="img/marksman_icon.png">
+			<div class="title">	
+			<h1>The League of Legends Marksman Hub</h1>
+				</div>
+			<ul>
+				<li><a href= "contact.html">Contact</a></li>
+				<li><a href="resources.html">Resources</a></li>		
+				<li><a class="active" href="index.html">Home</a></li>												
+			</ul>			
+		</div>
+	</header>
+
+<!----------------------------------------
+Hero background with page description -->
+<div class="herolanding">
+	<img cite="getwallpapers.com" alt="montage of most of the current marksman champions in league of legends" src="img/marksman_montage.png">
+	<div class="herotext">
+		<h1>The League of Legends<br>Marksman Hub</br></h1>
+		<h2>Your <em>only</em> resource for Marksman<br>stats, builds, and champion info</h2>
+	</div>
+</div>
+
+<!----------------------------------------
+Adding desirability and CTA -->
+<div class="main">
+	<q>I will always step up when it matters,<br>
+		and I will always be there at the clutch moment. –
+		Rekkles</q>
+	<div title="Choose Marksman" id="ctamarker">
+		<a href="#champions">CHOOSE YOUR<br>MARKSMAN BELOW!</span>
+	</div>
+</div>
+
+<!----------------------------------------
+The champion grids -->
+<a name="champions"></a>
+<div class="championgrid">
+
+<!----------------------------------------
+Jinx -->
+	<div title="Jinx" class="championcontainer" onclick="window.open('jinx.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Jinx</h1><h2>the Loose Cannon</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">8.50%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="positivewinrate">52.82%</p>
+			</div>
+		<div cite="leagueoflegends.com" class="championimg"><img alt="icon of jinx close-up" src="img/jinx/jinx_icon.png"></div>
+	</div>
+	
+<!----------------------------------------
+Tristana -->
+	<div title="Tristana" class="championcontainer" onclick="window.open('tristana.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Tristana</h1><h2>the Yordle Gunner</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">3.91%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="negativewinrate">49.83%</p>
+			</div>
+		<div class="championimg"><img cite="leagueoflegends.com" alt="icon of tristana close-up" src="img/tristana/tristana_icon.png"></div>
+	</div>
+	
+<!----------------------------------------
+Twitch -->
+	<div title="Twitch" class="championcontainer" onclick="window.open('twitch.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Twitch</h1><h2>the Plague Rat</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">1.48%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="positivewinrate">50.95%</p>
+			</div>
+		<div class="championimg"><img cite="leagueoflegends.com" alt="icon of twitch close-up" src="img/twitch/twitch_icon.png"></div>
+	</div>
+	
+<!----------------------------------------
+Lucian -->
+	<div title="Lucian" class="championcontainer" onclick="window.open('Lucian.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Lucian</h1><h2>the Purifier</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">9.20%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="negativewinrate">48.58%</p>
+			</div>
+		<div class="championimg"><img cite="leagueoflegends.com" alt="icon of lucian close-up" src="img/lucian/lucian_icon.png"></div>
+	</div>
+	
+<!----------------------------------------
+Ezreal -->
+	<div title="Ezreal" class="championcontainer" onclick="window.open('ezreal.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Ezreal</h1><h2>the Prodigal Explorer</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">10.6%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="negativewinrate">47.41%</p>
+			</div>
+		<div class="championimg"><img cite="leagueoflegends.com" alt="icon of ezreal close-up" src="img/ezreal/ezreal_icon.png"></div>
+	</div>
+	
+<!----------------------------------------
+Ashe -->
+	<div title="Ashe" class="championcontainer" onclick="window.open('ashe.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Ashe</h1><h2>the Frost Archer</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">3.54%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="positivewinrate">50.90%</p>
+			</div>
+		<div class="championimg"><img cite="leagueoflegends.com" alt="icon of ashe close-up" src="img/ashe/ashe_icon.png"></div>
+	</div>
+	
+<!----------------------------------------
+Corki -->
+	<div title="Corki" class="championcontainer" onclick="window.open('corki.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Corki</h1><h2>the Daring Bombardier</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">0.82%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="negativewinrate">47.42%</p>
+			</div>
+		<div class="championimg"><img cite="leagueoflegends.com" alt="icon of corki close-up"  src="img/corki/corki_icon.png"></div>
+	</div>
+	
+<!----------------------------------------
+Miss Fortune -->
+	<div title="Miss Fortune" class="championcontainer" onclick="window.open('miss_fortune.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Miss Fortune</h1><h2>the Bounty Hunter</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">2.59%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="positivewinrate">50.72%</p>
+			</div>
+		<div class="championimg"><img cite="leagueoflegends.com" alt="icon of miss fortune close-up" src="img/missfortune/missfortune_icon.png"></div>
+	</div>
+	
+	
+<!----------------------------------------
+Draven -->
+	<div title="Draven" class="championcontainer" onclick="window.open('draven.html','mywindow');" style="cursor: pointer;" &nbsp;>
+		<div class="championname"><h1>Draven</h1><h2>the Glorious Executioner</h2></div>
+			<div class="championdetails">
+				<p><strong>PICK: </strong></p><p id="pickrate">3.39%</p>
+				<br>
+				<p><strong>WIN: </strong></p><p id="negativewinrate">49.99%</p>
+			</div>
+		<div class="championimg"><img cite="leagueoflegends.com" alt="icon of draven close-up"  src="img/draven/draven_icon.png"></div>
+	</div>
+</div>
+
+
+<!----------------------------------------
+Page footer -->
+	<footer class="footer">
+			<img cite="leagueoflegends.com" alt="league of legends marksman icon" src="img/marksman_icon.png">
+			<div class="title">	
+				<h1>The League of Legends<br>Marksman Hub</h1>
+			</div>
+			<a id="returnpagetop" title="Return to top of page" href="#pagetop">Page Top</a>
+			<span>&#169; Marcus Campbell 2019</span>
+			<a id="privacy" title="Privacy statement" href="privacy.html">Privacy Statement</a>
+	</footer>
+<!----------------
+This div to force the footer down  -->
+</div>
+
+</body>
+</html>
